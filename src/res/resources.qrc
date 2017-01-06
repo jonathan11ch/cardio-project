@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/img">
+    <file alias="red_bulb.png">img/red_bulb.png</file>
+    <file alias="orange_bulb.png">img/orange_bulb.png</file> 
+    <file alias="green_bulb.png">img/green_bulb.png</file>
+</qresource>
+</RCC>

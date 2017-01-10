@@ -4,12 +4,11 @@ import pickle
 import time
 
 class nao_data_listener():
-	
 	def __init__(self, function = None):
 		print("creating Nao data listener")
 		#socket variables
 		self.TCP_PORT = 13000
-		self.TCP_IP = "192.168.1.16"
+		self.TCP_IP = "192.168.1.10"
 		
 		#storage variables
 		self.BUFFER_SIZE = 1024 #reception buffer
@@ -23,14 +22,12 @@ class nao_data_listener():
 			self.f = self.echo
 		#frecuency variables
 		self.TIME = 5
-			
 		#boolean
 		self.THREAD_ON = True
 		self.PRINT = False
 		self.SERIALIZED = True	
 		self.SPIN_ONCE = False
 		
-	
 	def set_payload(self, p):
 		self.payload = p		
 			
@@ -41,7 +38,6 @@ class nao_data_listener():
 		self.f = f
 	
 	def set_communication(self):
-		 
 		print("setting communication with data server...")
 		while self.THREAD_ON:
 			try:

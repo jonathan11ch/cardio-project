@@ -12,7 +12,6 @@ otherwise returns 0 (connection down)
 In parameters: String "NAO Ip" 
 Out Parameters: Integer 0 or 2 depending of the state of the connection
 '''
-
 def nao_checker(nao_ip):
 	#ping to nao
 	if not (nao_ip == "----"):
@@ -27,7 +26,6 @@ def nao_checker(nao_ip):
 	else:
 		print("Wrong ip format")
 		
-
 '''
 This functions checks the pc's internet connection connection and the ip Address
 Creates a socket in order to stablish a simple connection with a normal server (google.com) 
@@ -36,7 +34,6 @@ After the connection ask for the IP address
 In parameters: void
 Out Parameters: String "Ip address" if successfull and Integer -1 if no internet conection
 '''
-
 def localhost_checker():
 
 	hostname = "google.com"
@@ -73,4 +70,3 @@ def check_devices():
 			imu_state = 2
 	return [laser_state, imu_state]
 	
-
